@@ -26,10 +26,10 @@ $result = $db->query("SELECT * FROM news_download  WHERE user_id = '$userId'  AN
 $temp = $result->fetch_row();
 
 if (!empty(@$temp)):
-    $result = $db->query("SELECT * FROM news_download  WHERE user_id = '$userId' ORDER BY created DESC LIMIT 1");
+    $result = $db->query("SELECT *,DATE_ADD(created,INTERVAL 1 MONTH) as next_download FROM news_download  WHERE user_id = '$userId' ORDER BY created DESC LIMIT 1");
     $temp = $result->fetch_row();
     ?>
-<p><?= $lang_forum['You already download the news']; ?>. <?= $lang_forum['Next download available is']; ?> <?= $temp[2]; ?></p>
+<p><?= $lang_forum['You already download the news']; ?>. <?= $lang_forum['Next download available is']; ?> <?= $temp[3]; ?></p>
 <?php else: ?>
     <form action="#" method="POST" id="form">
         <input type="hidden" name="id" value="<?= $userId; ?>">
