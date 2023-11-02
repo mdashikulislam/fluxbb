@@ -10,6 +10,7 @@ $lang_search = array(
 'Search flood'						=>	'At least %s seconds have to pass between searches. Please wait %s seconds and try searching again.',
 'Search'							=>	'Search',
 'Page Visit'						=>	'Page Visit',
+'News'						        =>	'News',
 'Visit Url'						    =>	'Visit Url',
 'Visit Time'						=>	'Visit Time',
 'Search criteria legend'			=>	'Enter your search criteria',

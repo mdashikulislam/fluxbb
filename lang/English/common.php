@@ -164,7 +164,7 @@ $lang_common = array(
 'RSS topic feed'					=>	'RSS topic feed',
 'Atom topic feed'					=>	'Atom topic feed',
 'Page Visit'					    =>	'Page Visit',
-
+    'News'						        =>	'News',
 'After time'	=>   'Added later',
 'After time s'	=>   ' s',
 'After time i'	=>   ' min',

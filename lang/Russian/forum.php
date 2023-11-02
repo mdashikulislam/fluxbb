@@ -13,6 +13,8 @@ $lang_forum = array(
 'Mod controls' => 'Инструменты модерирования',
 'Is subscribed'	=>	'Вы подписаны на этот раздел',
 'Unsubscribe'	=>	'Отказаться от подписки',
-'Subscribe'		=>	'Подписаться на этот раздел'
-
+'Subscribe'		=>	'Подписаться на этот раздел',
+'Click here to download'=>'Нажмите здесь, чтобы загрузить',
+'You already download the news'=>'Вы уже скачали новость',
+'Next download available is'=>'Следующая доступная загрузка:',
 );

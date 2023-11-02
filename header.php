@@ -213,6 +213,8 @@ else
     if (@$pun_user['g_id'] == 1){
         $links[] = '<li id="navvisit"'.((PUN_ACTIVE_PAGE == 'visit') ? ' class="isactive"' : '').'><a href="visit.php">'.$lang_common['Page Visit'].'</a></li>';
     }
+    //News
+    $links[] = '<li id="navnews"'.((PUN_ACTIVE_PAGE == 'news') ? ' class="isactive"' : '').'><a href="news.php">'.$lang_common['News'].'</a></li>';
 // New PMS
 	if ($pun_config['o_pms_enabled'] == '1' && ($pun_user['g_pm'] == 1 || $pun_user['messages_new'] > 0))
 		$links[] = '<li id="navpmsnew"'.((PUN_ACTIVE_PAGE == 'pms_new' || $pun_user['messages_new'] > 0) ? ' class="isactive"' : '').'><a href="pmsnew.php">'.$lang_common['PM'].(($pun_user['messages_new'] > 0) ? ' (<span'.((empty($pun_config['o_pms_flasher']) || PUN_ACTIVE_PAGE == 'pms_new') ? '' : ' class="remflasher"' ).'>'.$pun_user['messages_new'].'</span>)' : '').'</a></li>';
